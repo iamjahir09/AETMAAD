@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetmaad Style Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chatbot_style.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+  <script src="{{ url_for('static', filename='chatbot.js') }}" defer></script>
+</head>
+<body>
+  
+
+
+  
+ 
+
+  <button class="send-btn" id="sendBtn">💬 Chat</button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">Aetmaad Healthbot</div>
+    <div class="chatbot-body" id="chatBody"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button id="sendMessageBtn">Send</button>
+    </div>
+  </div>
+
+  
+</body>
+</html>
